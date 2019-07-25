@@ -7,18 +7,18 @@
   
   <title>hexo博客文章图片显示问题 | 徐宏斌的技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="问题：github+hexo搭建的博客，一篇博客上传到github后图片不能正常显示 原因：文章中的图片不能被读取到→图片路径不对 解决方法： 将hexo配置文件_config.yml 中post_asset_folder设置成true。  设置完成后，再次新建文件时，Hexo会自动建立一个与文章同名的文件夹，可以把与该文章相关的所有资源都放到那个文件夹，  安装一个图片插件，  在hexo的目录">
+  <meta name="description" content="问题：github+hexo搭建的博客，一篇博客上传到github后图片不能正常显示 原因：文章中的图片不能被读取到→图片路径不对 解决方法：3步 将hexo配置文件_config.yml 中post_asset_folder设置成true。  设置完成后，再次新建文件时，Hexo会自动建立一个与文章同名的文件夹，可以把与该文章相关的所有资源都放到那个文件夹，  安装一个图片插件，  在hexo的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo博客文章图片显示问题">
 <meta property="og:url" content="https://gmahsm.github.io/2019/07/25/hexo博客文章图片显示问题/index.html">
 <meta property="og:site_name" content="徐宏斌的技术博客">
-<meta property="og:description" content="问题：github+hexo搭建的博客，一篇博客上传到github后图片不能正常显示 原因：文章中的图片不能被读取到→图片路径不对 解决方法： 将hexo配置文件_config.yml 中post_asset_folder设置成true。  设置完成后，再次新建文件时，Hexo会自动建立一个与文章同名的文件夹，可以把与该文章相关的所有资源都放到那个文件夹，  安装一个图片插件，  在hexo的目录">
+<meta property="og:description" content="问题：github+hexo搭建的博客，一篇博客上传到github后图片不能正常显示 原因：文章中的图片不能被读取到→图片路径不对 解决方法：3步 将hexo配置文件_config.yml 中post_asset_folder设置成true。  设置完成后，再次新建文件时，Hexo会自动建立一个与文章同名的文件夹，可以把与该文章相关的所有资源都放到那个文件夹，  安装一个图片插件，  在hexo的">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://gmahsm.github.io/2019/07/25/hexo博客文章图片显示问题/%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E4%B8%8E%E6%96%87%E4%BB%B6%E5%90%8D%E7%9B%B8%E5%90%8C%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9%E7%94%A8%E6%9D%A5%E5%AD%98%E6%94%BE%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90.jpg">
-<meta property="og:updated_time" content="2019-07-25T00:19:46.397Z">
+<meta property="og:updated_time" content="2019-07-25T06:54:29.080Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo博客文章图片显示问题">
-<meta name="twitter:description" content="问题：github+hexo搭建的博客，一篇博客上传到github后图片不能正常显示 原因：文章中的图片不能被读取到→图片路径不对 解决方法： 将hexo配置文件_config.yml 中post_asset_folder设置成true。  设置完成后，再次新建文件时，Hexo会自动建立一个与文章同名的文件夹，可以把与该文章相关的所有资源都放到那个文件夹，  安装一个图片插件，  在hexo的目录">
+<meta name="twitter:description" content="问题：github+hexo搭建的博客，一篇博客上传到github后图片不能正常显示 原因：文章中的图片不能被读取到→图片路径不对 解决方法：3步 将hexo配置文件_config.yml 中post_asset_folder设置成true。  设置完成后，再次新建文件时，Hexo会自动建立一个与文章同名的文件夹，可以把与该文章相关的所有资源都放到那个文件夹，  安装一个图片插件，  在hexo的">
 <meta name="twitter:image" content="https://gmahsm.github.io/2019/07/25/hexo博客文章图片显示问题/%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E4%B8%8E%E6%96%87%E4%BB%B6%E5%90%8D%E7%9B%B8%E5%90%8C%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9%E7%94%A8%E6%9D%A5%E5%AD%98%E6%94%BE%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90.jpg">
   
     <link rel="alternate" href="/atom.xml" title="徐宏斌的技术博客" type="application/atom+xml">
@@ -90,7 +90,7 @@
       
         <h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><p>github+hexo搭建的博客，一篇博客上传到github后图片不能正常显示</p>
 <h2 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h2><p>文章中的图片不能被读取到→图片路径不对</p>
-<h2 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h2><ol>
+<h2 id="解决方法：3步"><a href="#解决方法：3步" class="headerlink" title="解决方法：3步"></a>解决方法：3步</h2><ol>
 <li><p>将hexo配置文件<code>_config.yml</code> 中<code>post_asset_folder</code>设置成<code>true</code>。</p>
 <p> 设置完成后，再次新建文件时，Hexo会自动建立一个与文章同名的文件夹，可以把与该文章相关的所有资源都放到那个文件夹，</p>
 </li>
@@ -101,9 +101,9 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
 
 <p>效果如下图：</p>
-<p><img src="/2019/07/25/hexo博客文章图片显示问题/%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E4%B8%8E%E6%96%87%E4%BB%B6%E5%90%8D%E7%9B%B8%E5%90%8C%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9%E7%94%A8%E6%9D%A5%E5%AD%98%E6%94%BE%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90.jpg" alt="同名文件夹"></p>
+<p><img src="/2019/07/25/hexo博客文章图片显示问题/%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E4%B8%8E%E6%96%87%E4%BB%B6%E5%90%8D%E7%9B%B8%E5%90%8C%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9%E7%94%A8%E6%9D%A5%E5%AD%98%E6%94%BE%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90.jpg" alt></p>
 <ol start="3">
-<li>文章插入图片方式</li>
+<li>博客插入图片方式</li>
 </ol>
 <p><code>![图片标题](文章同名文件夹/图片名称.jpg)</code></p>
 
